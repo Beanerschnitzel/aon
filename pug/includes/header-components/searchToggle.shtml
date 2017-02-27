@@ -1,0 +1,6 @@
+<div data-mfp-focus="#searchMain" data-mfp-src="#search-popup" class="searchToggle openPopup"></div>
+<div class="popup mfp-hide popup--search" id="search-popup">
+  <div class="searchBox searchBox--main">
+    <input id="searchMain" type="text" placeholder="Search" name="" class="searchBox-textField">
+    <a class="searchBox-submit"></a></div>
+</div>

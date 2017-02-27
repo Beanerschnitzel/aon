@@ -1,0 +1,21 @@
+      <!-- show if NOT signed in 
+      <nav class="navSignin"> 
+        <ul>
+          <li><a href="" class="navSignin-signin">Sign In</a></li>
+          <li><a href="" class="navSignin-register">Register</a></li>
+        </ul>
+      </nav>-->
+      <!-- /.navSignin--> 
+      <!--Show if signed in-->
+      <nav class="navUser">
+        <ul>
+          <li>
+            <div class="navUser-message">Hello Bartholomew<span class="navUser-icon"></span></div>
+            <ul>
+              <li><a href="">My profile</a></li>
+              <li><a href="">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!--/.navUser--> 

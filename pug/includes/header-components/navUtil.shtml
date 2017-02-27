@@ -1,0 +1,22 @@
+      <nav class="navUtil">
+        <ul>
+          <li class="hasChildren"><a href="">Link</a>
+            <ul>
+              <li><a href="">Sub Link</a></li>
+              <li><a href="">Sub Link</a></li>
+              <li><a href="">Sub Link</a></li>
+            </ul>
+          </li>
+          <li class="hasChildren selected"><a href="">Longer link</a>
+            <ul>
+              <li><a href="">Sub Link</a></li>
+              <li><a href="">Sub Link</a></li>
+              <li><a href="">Sub Link</a></li>
+            </ul>
+          </li>
+          <li><a href="">link</a></li>
+          <li><a href="">Another long link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
+      <!--/.navUtility-->

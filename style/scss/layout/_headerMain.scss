@@ -1,0 +1,101 @@
+/* MAIN HEADER
+========================================================================== */
+
+.headerMain {
+    flex:0 0 auto;
+
+    position: relative;
+    z-index: 3;
+    border-bottom:1px solid red;
+    font-size:14px;
+}
+
+.headerMain-util {
+
+    padding-right: $spacer;
+    padding-left: $spacer;
+
+}
+.headerMain-utilInner {
+    @include media-breakpoint-up(lg) {
+        display:flex;
+        justify-content:space-between;
+    }
+}
+
+.headerMain-utilZone01 {
+    display:flex;
+    align-items:center;
+
+    > * {
+        flex:1 1 auto;
+    }
+}
+
+.headerMain-utilZone02 {
+    display:flex;
+    align-items:center;
+
+    > * {
+        flex:1 1 auto;
+    }
+}
+
+.headerMain-utilZone03 {
+    display:flex;
+    align-items:center;
+
+    > * {
+        flex:1 1 auto;
+    }
+}
+
+.headerMain-main {
+    @include transition(all .2s ease-in-out);
+
+    padding-right: $spacer;
+    padding-left: $spacer;
+}
+
+.headerMain-mainInner {
+    display:flex;
+    background:yellow;
+
+    justify-content:space-between;
+}
+
+.headerMain-mainZone01 {
+    display:flex;
+    align-items:center;
+    background:green;
+
+    > * {
+        flex:1 1 auto;
+    }
+}
+
+.headerMain-mainZone02 {
+    display:flex;
+    align-items:center;
+    background:red;
+
+    @include media-breakpoint-up(lg) {
+        //shift to the right on lg screens
+        margin-left: auto;
+    }
+
+    > * {
+        flex:1 1 auto;
+    }
+}
+
+.headerMain-mainZone03 {
+    display:flex;
+    align-items:center;
+    background:orange;
+
+    //border: 1px solid red;
+    > * {
+        flex:1 1 auto;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="style/css/main.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/front-end/dropdown.js"></script>
+    <title>Home</title>
+  </head>
+  <body><!-- Main Header HTML -->
+    <header class="headerMain">
+      <div class="headerMain-util">
+        <div class="headerMain-utilInner">
+          <div class="headerMain-utilZone01">utilZone01</div>
+          <div class="headerMain-utilZone02">utilZone02</div>
+          <div class="headerMain-utilZone03">utilZone03</div>
+        </div>
+      </div>
+      <div class="headerMain-main">
+        <div class="headerMain-mainInner">
+          <div class="headerMain-mainZone01">
+            <div class="logoMain"><a href="google.com"><img src="img/logo.png"></a></div>
+          </div>
+          <div class="headerMain-mainZone02"> 
+            <nav class="navMain">
+              <ul>
+                <li><a href="home.html">link 01</a></li>
+                <li><a href="home.html">link 02</a></li>
+                <li><a href="home.html">link 03</a></li>
+                <li><a href="home.html">link 04</a></li>
+                <li><a href="home.html">link 05</a></li>
+                <li><a href="home.html">link 06</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="headerMain-mainZone03">
+            <div class="user">
+              <div class="user_info">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                </div><p>Aon Service Corporation</p>
+              </div>
+              <div class="user_img"><img src="http://placehold.it/50x50"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>main</p>
+          </div>
+          <div class="col-md-6">
+            <p>main</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footerMain">
+      <p>footer</p>
+    </footer>
+    <script>
+      $(document).ready(function() {
+      	$('body').addClass("inlineScriptTest");
+      });
+    </script>
+  </body>
+</html>

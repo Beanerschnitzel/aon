@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// min nav
+// -----------------------------------------------------------------------------
+.navMain {}
+
+.navMain ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  > li > a {
+    display: block;
+    padding: $spacer-x $spacer-y;
+    cursor: pointer;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    @include transition(all 0.5s ease-in-out);
+    &:before {
+      @include transition(all 0.5s ease-in-out);
+      //background-color: lighten($colorGrey, 7);
+      border-radius: 500px;
+      content: "";
+      height: 5px;
+      top: 50%;
+      left: 50%;
+      margin-left: -2.5px;
+      margin-left: -2.5px;
+      opacity: 0;
+      position: absolute;
+      width: 5px;
+      z-index: -1;
+    }
+    &:hover {
+      color: $white;
+      &:before {
+        opacity: 1;
+        -webkit-transform: scale(50);
+        -moz-transform: scale(50);
+        -o-transform: scale(50);
+        -ms-transform: scale(50);
+        transform: scale(50);
+        background: $brand-primary;
+      }
+    }
+  }
+}

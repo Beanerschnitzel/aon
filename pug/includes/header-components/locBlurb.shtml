@@ -1,0 +1,9 @@
+      <ul itemscope itemtype="http://schema.org/LocalBusiness" class="locBlurb">
+        <li itemprop="name">Bridgeline Denver</li>
+        <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">1600 Broadway</span>,
+        <span itemprop="addressLocality">Denver</span>,
+        <span itemprop="addressRegion">CO</span>
+        <span itemprop="postalCode">80202</span></li>
+        </li>
+      </ul>

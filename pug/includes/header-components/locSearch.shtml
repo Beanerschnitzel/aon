@@ -1,0 +1,8 @@
+      <div class="locSearch">
+        <label class="locSearch-label" for="locSearch">Find Locations</label>
+        <div class="locSearch-inputWrap">
+        <input type="text" id="locSearch" class="locSearch-input" placeholder="Zip, State or City">
+        <a class="locSearch-submit" aria-label="Search">Go</a>
+        </div><!--/.locSearch-inputWrap-->
+      </div>
+      <!--/.locsearch-->

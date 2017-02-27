@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// User info/tools in header
+// -----------------------------------------------------------------------------
+.user {
+	display:flex;
+	align-items:center;
+}
+.user_info {
+	padding:0 $spacer;
+}
+.user_img img {
+	border-radius:50%;
+}
