@@ -7,16 +7,38 @@ html(lang="en")
 	body
 		include includes/_header-main.pug
 		main
-			.container
-				.row
-					.col-md-6
-						p main
-					.col-md-6
-						p main
+			.container-fluid
+				.row.widgets
+					.col-md-6.col-xl-4
+						.row
+							.col-12.widget.widget--3-2
+							.col-md-6.widget.widget--2-1
+							.col-md-6.widget.widget--2-1
+					.col-md-6.col-xl-4
+						.row
+							.col-md-6.widget.widget--1-1
+							.col-md-6.widget.widget--1-1
+							.col-md-6.widget.widget--1-1
+							.col-md-6.widget.widget--1-1
+					.col-md-6.col-xl-4
+						.row
+							.col-12.widget.widget--2-1
+							.col-12.widget.widget--2-1
+					.col-md-6.col-xl-4
+						.row
+							.col-md-6.widget.widget--1-1
+							.col-md-6.widget.widget--1-1
+							.col-12.widget.widget--2-1
+					.col-md-6.col-xl-8
+						.row
+							.col-md-6.widget.widget--2-1
+							.col-md-6.widget.widget--2-1
+							.col-md-6.widget.widget--2-1
+							.col-md-6.widget.widget--2-1
 
-		include includes/_footer.pug
+		include includes/_footerMain.pug
 
 		script.
 			$(document).ready(function() {
-				$('body').addClass("inlineScriptTest");
+				$('.dropdown-toggle').dropdown()
 			});

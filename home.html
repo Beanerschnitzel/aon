@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="style/css/main.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/front-end/dropdown.js"></script>
+    <script src="js/front-end/bootstrap.min.js"></script>
     <title>Home</title>
   </head>
   <body><!-- Main Header HTML -->
@@ -37,26 +37,56 @@
           </div>
           <div class="headerMain-mainZone03">
             <div class="user">
-              <div class="user_info">
+              <div class="user_info">Bartholomew Anderrson</div>
+              <div class="user_img">
                 <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                </div><p>Aon Service Corporation</p>
+                  <button class="user_btn dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image:url(http://fillmurray.com/40/40);"></button>
+                  <div class="dropdown-menu dropdown-menu-right user_dropdown" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                </div>
               </div>
-              <div class="user_img"><img src="http://placehold.it/50x50"></div>
             </div>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p>main</p>
+      <div class="container-fluid">
+        <div class="row widgets">
+          <div class="col-md-6 col-xl-4">
+            <div class="row">
+              <div class="col-12 widget widget--3-2"></div>
+              <div class="col-md-6 widget widget--2-1"></div>
+              <div class="col-md-6 widget widget--2-1"></div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <p>main</p>
+          <div class="col-md-6 col-xl-4">
+            <div class="row">
+              <div class="col-md-6 widget widget--1-1"></div>
+              <div class="col-md-6 widget widget--1-1"></div>
+              <div class="col-md-6 widget widget--1-1"></div>
+              <div class="col-md-6 widget widget--1-1"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="row">
+              <div class="col-12 widget widget--2-1"></div>
+              <div class="col-12 widget widget--2-1"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="row">
+              <div class="col-md-6 widget widget--1-1"></div>
+              <div class="col-md-6 widget widget--1-1"></div>
+              <div class="col-12 widget widget--2-1"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-8">
+            <div class="row">
+              <div class="col-md-6 widget widget--2-1"></div>
+              <div class="col-md-6 widget widget--2-1"></div>
+              <div class="col-md-6 widget widget--2-1"></div>
+              <div class="col-md-6 widget widget--2-1"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -66,7 +96,7 @@
     </footer>
     <script>
       $(document).ready(function() {
-      	$('body').addClass("inlineScriptTest");
+      	$('.dropdown-toggle').dropdown()
       });
     </script>
   </body>
