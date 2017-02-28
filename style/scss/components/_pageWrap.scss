@@ -1,0 +1,7 @@
+.pageWrap {
+	@include media-breakpoint-up(md) {
+		margin-top:60px;
+		margin-left:75px;
+
+	}
+}

@@ -19,10 +19,25 @@
 	position:relative;
 	width:100%;
 	margin-bottom:10px;
-	&:before {
+		&:before {
 		content:'';
 		display:block;
-		background:green;
+	}
+}
+.widget_content {
+	position:absolute;
+	top:0;
+	right:5px;
+	bottom:0;
+	left:5px;
+	background:#48b0f7;
+	padding:$spacer;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	background-repeat:none;
+	*:last-child {
+		margin-bottom:0;
 	}
 }
 .widget--1-1:before {
@@ -33,4 +48,11 @@
 }
 .widget--3-2:before {
 	padding-top:calc(75% - 10px);
+}
+.widget_heading {
+	font-weight:300;
+	font-size:20px;
+}
+.widget_indicator {
+	margin-bottom:auto;
 }

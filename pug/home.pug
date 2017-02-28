@@ -5,40 +5,107 @@ html(lang="en")
 		title Home
 
 	body
-		include includes/_header-main.pug
-		main
-			.container-fluid
-				.row.widgets
-					.col-md-6.col-xl-4
-						.row
-							.col-12.widget.widget--3-2
-							.col-md-6.widget.widget--2-1
-							.col-md-6.widget.widget--2-1
-					.col-md-6.col-xl-4
-						.row
-							.col-md-6.widget.widget--1-1
-							.col-md-6.widget.widget--1-1
-							.col-md-6.widget.widget--1-1
-							.col-md-6.widget.widget--1-1
-					.col-md-6.col-xl-4
-						.row
-							.col-12.widget.widget--2-1
-							.col-12.widget.widget--2-1
-					.col-md-6.col-xl-4
-						.row
-							.col-md-6.widget.widget--1-1
-							.col-md-6.widget.widget--1-1
-							.col-12.widget.widget--2-1
-					.col-md-6.col-xl-8
-						.row
-							.col-md-6.widget.widget--2-1
-							.col-md-6.widget.widget--2-1
-							.col-md-6.widget.widget--2-1
-							.col-md-6.widget.widget--2-1
+		form#form01
+			.pageWrap
+				include includes/_navBar.pug
+				include includes/_header-main.pug
+				main
+					.container-fluid
+						.row.widgets
+							.col-md-6
+								.row
+									.col-12.widget.widget--3-2
+										.widget_content(style="background-image:url(http://fillmurray.com/775/563")
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+									.col-md-6.widget.widget--2-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Leadership Changes in ARS and AON Inpoint
+											p yoyo
+									.col-md-6.widget.widget--2-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+							.col-md-6
+								.row
+									.col-md-6.widget.widget--1-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo											
+									.col-md-6.widget.widget--1-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+									.col-md-6.widget.widget--1-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+									.col-md-6.widget.widget--1-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+							.col-md-6
+								.row
+									.col-12.widget.widget--2-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+									.col-12.widget.widget--2-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+							.col-md-6
+								.row
+									.col-md-6.widget.widget--1-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+									.col-md-6.widget.widget--1-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+									.col-12.widget.widget--2-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+							.col-md-6.col-xl-8
+								.row
+									.col-md-6.widget.widget--2-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+									.col-md-6.widget.widget--2-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+									.col-md-6.widget.widget--2-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
+									.col-md-6.widget.widget--2-1
+										.widget_content
+											.widget_indicator.icon-triangle-right-alt2
+											h3.widget_heading Everything you need to know to start a "client Conversation"
+											p yoyo
 
-		include includes/_footerMain.pug
+				include includes/_footerMain.pug
 
-		script.
-			$(document).ready(function() {
-				$('.dropdown-toggle').dropdown()
-			});
+				script.
+					$(document).ready(function() {
+						$('.dropdown-toggle').dropdown()
+					});

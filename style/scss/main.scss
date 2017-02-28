@@ -24,13 +24,17 @@
   'layout/headerMain',
   'layout/widgets',
   'layout/main',
+  'layout/navBar',
   'layout/footerMain';
 
 // 5. Components
 @import
   'components/button',
   'components/user',
+  'components/pageWrap',
   'components/logomain',
+  'components/icons',
+  'components/searchMain',
   'components/navMain';
 
 // 6. Page-specific styles

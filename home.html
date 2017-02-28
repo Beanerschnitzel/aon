@@ -5,99 +5,209 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="style/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/front-end/bootstrap.min.js"></script>
+    <script src="js/front-end/navBar.js"></script>
     <title>Home</title>
   </head>
-  <body><!-- Main Header HTML -->
-    <header class="headerMain">
-      <div class="headerMain-util">
-        <div class="headerMain-utilInner">
-          <div class="headerMain-utilZone01">utilZone01</div>
-          <div class="headerMain-utilZone02">utilZone02</div>
-          <div class="headerMain-utilZone03">utilZone03</div>
-        </div>
-      </div>
-      <div class="headerMain-main">
-        <div class="headerMain-mainInner">
-          <div class="headerMain-mainZone01">
-            <div class="logoMain"><a href="google.com"><img src="img/logo.png"></a></div>
+  <body>
+    <form id="form01">
+      <div class="pageWrap">
+        <div class="navBar">
+          <div class="navBar_menuToggle">
+            <div class="navBar_menuIcon"><span class="navBar_menuPatty"></span><span class="navBar_menuPatty"></span><span class="navBar_menuPatty"></span><span class="navBar_menuPatty"></span><span class="navBar_menuPatty"></span><span class="navBar_menuPatty"></span></div>
           </div>
-          <div class="headerMain-mainZone02"> 
-            <nav class="navMain">
-              <ul>
-                <li><a href="home.html">link 01</a></li>
-                <li><a href="home.html">link 02</a></li>
-                <li><a href="home.html">link 03</a></li>
-                <li><a href="home.html">link 04</a></li>
-                <li><a href="home.html">link 05</a></li>
-                <li><a href="home.html">link 06</a></li>
-              </ul>
-            </nav>
+          <div class="navBar_searchToggle">
+            <div class="navBar_searchIcon"></div>
           </div>
-          <div class="headerMain-mainZone03">
-            <div class="user">
-              <div class="user_info">Bartholomew Anderrson</div>
-              <div class="user_img">
-                <div class="dropdown">
-                  <button class="user_btn dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image:url(http://fillmurray.com/40/40);"></button>
-                  <div class="dropdown-menu dropdown-menu-right user_dropdown" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+          <div class="navBar_face"></div>
+          <nav class="navMain">
+            <ul>
+              <li><a href="home.html">link 01</a></li>
+              <li><a href="home.html">link 02</a></li>
+              <li><a href="home.html">link 03</a></li>
+              <li><a href="home.html">link 04</a></li>
+              <li><a href="home.html">link 05</a></li>
+            </ul>
+          </nav>
+          <div class="searchMain">
+            <div class="inlineLabel">
+              <label>search foo</label>
+              <input type="text" id="searchMain">
+            </div>
+          </div>
+          <div class="navBar_overlay"></div>
+        </div><!-- Main Header HTML -->
+        <header class="headerMain">
+          <div class="headerMain-util"></div>
+          <div class="headerMain-main">
+            <div class="headerMain-mainInner">
+              <div class="headerMain-mainZone01">
+                <div class="logoMain"><a href="google.com"><img src="img/logo.png"></a></div>
+              </div>
+              <div class="headerMain-mainZone02"> </div>
+              <div class="headerMain-mainZone03">
+                <div class="user">
+                  <div class="user_info">Bartholomew Anderrson</div>
+                  <div class="user_img">
+                    <div class="dropdown">
+                      <button class="user_btn dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-image:url(http://fillmurray.com/40/40);"></button>
+                      <div class="dropdown-menu dropdown-menu-right user_dropdown" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </header>
+        <main>
+          <div class="container-fluid">
+            <div class="row widgets">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-12 widget widget--3-2">
+                    <div class="widget_content" style="background-image:url(http://fillmurray.com/775/563;">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 widget widget--2-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Leadership Changes in ARS and AON Inpoint</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 widget widget--2-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-6 widget widget--1-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo											</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 widget widget--1-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 widget widget--1-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 widget widget--1-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-12 widget widget--2-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                  <div class="col-12 widget widget--2-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-6 widget widget--1-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 widget widget--1-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                  <div class="col-12 widget widget--2-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-8">
+                <div class="row">
+                  <div class="col-md-6 widget widget--2-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 widget widget--2-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 widget widget--2-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 widget widget--2-1">
+                    <div class="widget_content">
+                      <div class="widget_indicator icon-triangle-right-alt2"></div>
+                      <h3 class="widget_heading">Everything you need to know to start a "client Conversation"</h3>
+                      <p>yoyo</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footerMain">
+          <p>footer</p>
+        </footer>
+        <script>
+          $(document).ready(function() {
+          	$('.dropdown-toggle').dropdown()
+          });
+        </script>
       </div>
-    </header>
-    <main>
-      <div class="container-fluid">
-        <div class="row widgets">
-          <div class="col-md-6 col-xl-4">
-            <div class="row">
-              <div class="col-12 widget widget--3-2"></div>
-              <div class="col-md-6 widget widget--2-1"></div>
-              <div class="col-md-6 widget widget--2-1"></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <div class="row">
-              <div class="col-md-6 widget widget--1-1"></div>
-              <div class="col-md-6 widget widget--1-1"></div>
-              <div class="col-md-6 widget widget--1-1"></div>
-              <div class="col-md-6 widget widget--1-1"></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <div class="row">
-              <div class="col-12 widget widget--2-1"></div>
-              <div class="col-12 widget widget--2-1"></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <div class="row">
-              <div class="col-md-6 widget widget--1-1"></div>
-              <div class="col-md-6 widget widget--1-1"></div>
-              <div class="col-12 widget widget--2-1"></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-8">
-            <div class="row">
-              <div class="col-md-6 widget widget--2-1"></div>
-              <div class="col-md-6 widget widget--2-1"></div>
-              <div class="col-md-6 widget widget--2-1"></div>
-              <div class="col-md-6 widget widget--2-1"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="footerMain">
-      <p>footer</p>
-    </footer>
-    <script>
-      $(document).ready(function() {
-      	$('.dropdown-toggle').dropdown()
-      });
-    </script>
+    </form>
   </body>
 </html>

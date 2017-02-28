@@ -8,6 +8,14 @@
     z-index: 3;
     border-bottom:1px solid $gray-lighter;
     font-size:14px;
+    background:$white;
+    height:60px;
+    @include media-breakpoint-up(lg) {
+        position:fixed;
+        top:0;
+        left:75px;
+        right:0;
+    }
 }
 
 .headerMain-util {
