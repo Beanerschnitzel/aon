@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// generic list of info about an article or other piece of content
+// -----------------------------------------------------------------------------
+.infoActions {
+    font-size: 14px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        > li {
+            margin-right: $spacer;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

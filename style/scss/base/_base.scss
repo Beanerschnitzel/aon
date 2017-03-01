@@ -5,7 +5,17 @@
 /**
  * Set up a decent box model on the root element
  */
+html{
+    overflow-x:hidden;
 
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+
+	-moz-osx-font-smoothing: antialiased;
+    -webkit-size--adjust: 100%; 
+    -ms-size--adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+}
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -20,7 +30,7 @@
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $brand-primary;
   text-decoration: none;
 
   @include on-event {

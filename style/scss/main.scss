@@ -29,16 +29,20 @@
 
 // 5. Components
 @import
+  'components/bug',
   'components/button',
   'components/user',
   'components/pageWrap',
   'components/logomain',
+  'components/tagline',
   'components/icons',
   'components/searchMain',
   'components/toolList',
   'components/newsList',
   'components/eventList',
+  'components/infoActions',
   'components/lists',
+  'components/searchBox',
   'components/navMain';
 
 // 6. Page-specific styles

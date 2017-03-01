@@ -6,6 +6,18 @@
   <div class="navBar_searchToggle">
     <div class="navBar_searchIcon"></div>
   </div>
+  <div class="user navBar_user"><a href="">
+      <!--.user_info Bartholomew Andersson-->
+      <div class="bug user_bug">3</div>
+      <div class="user_img"><img src="http://fillmurray.com/40/40"/>
+        <!--.dropdown
+        button#dropdownMenuButton.user_btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false', style="background-image:url(http://fillmurray.com/40/40)")
+        .dropdown-menu.dropdown-menu-right.user_dropdown(aria-labelledby='dropdownMenuButton')
+        	a.dropdown-item(href='#') Action
+        	a.dropdown-item(href='#') Another action
+        	a.dropdown-item(href='#') Something else here
+        -->
+      </div></a></div>
   <div class="navBar_face"></div>
   <nav class="navMain">
     <ul>
@@ -17,9 +29,8 @@
     </ul>
   </nav>
   <div class="searchMain">
-    <div class="inlineLabel">
-      <label>search foo</label>
-      <input type="text" id="searchMain"/>
+    <div class="searchBox searchBox--main">
+      <input class="searchBox-textField" id="searchMain" type="text" placeholder="Search" name=""/><a class="searchBox-submit"></a>
     </div>
   </div>
   <div class="navBar_overlay"></div>

@@ -2,33 +2,32 @@
 ========================================================================== */
 
 .logoMain {
-    //max-width: 50%;
-    padding: $spacer 0;
-
     text-align: center;
-
-    @include media-breakpoint-up(lg) {
+    font-weight:400;
+    font-size:26px;
+    white-space: nowrap;
+    > a {
+            color: lighten($gray-light,20);
+            text-decoration:none;
+    }
+    @include media-breakpoint-up(md) {
         //@include flex(0 0 auto);
-        display:flex;
-        align-items:center;
-
+        display: flex;
+        align-items: center;
         //max-width: 20%;
-
         //we need to put a width on the a tag so the logo has something to be max-width:100% OF
         > a {
             display: inline-block;
-
             width: 100%;
         }
     }
-
     img {
         @include transition(all 0.2s ease-in-out);
         //adjust this max-height to suit the client logo
         max-height: 40px;
         //shrink the logo to an appropriate size when the header is fixed on scroll
         body[class*='js-headerFixed'] & {
-            max-height:25px;
+            max-height: 25px;
         }
     }
 }

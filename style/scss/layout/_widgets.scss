@@ -2,142 +2,175 @@
 ========================================================================== */
 
 .widgets {
-  [class*='col'] {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
+    [class*='col'] {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
 }
 
 .widgets.row {
-  margin-right: -5px;
-  margin-left: -5px;
-  .row {
     margin-right: -5px;
     margin-left: -5px;
-  }
+    .row {
+        margin-right: -5px;
+        margin-left: -5px;
+    }
 }
 
 .widget {
-  position: relative;
-  width: 100%;
-  margin-bottom: 10px;
-  &:before {
-    content: '';
-    display: block;
-  }
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    &:before {
+        content: '';
+        display: block;
+    }
 }
 
 .widget_content {
-  color: $white;
-  position: absolute;
-  top: 0;
-  right: 5px;
-  bottom: 0;
-  left: 5px;
-  background: $white;
-  padding: $spacer;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: flex-start;
-  > *:last-child {
-    margin-bottom: 0;
-  }
+    color: $white;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    bottom: 0;
+    left: 5px;
+    background: $white;
+    padding: $spacer;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-start;
+    overflow: hidden;
+    padding-top: 50px;
+    > *:last-child {
+        margin-bottom: 0;
+    }
+    a {
+        color: $white;
+    }
 }
 
 .widget_content--img {
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 200px;
-    z-index: 1;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-  }
+    justify-content: flex-end;
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 200px;
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    }
+    .widget_topBar {
+        //margin-bottom: auto;
+    }
 }
 
 .widget--1-1:before {
-  padding-top: calc(100% - 5px);
+    padding-top: calc(100% - 5px);
 }
 
 .widget--2-1:before {
-  padding-top: calc(50% - 10px);
+    padding-top: calc(50% - 10px);
 }
 
 .widget--3-2:before {
-  padding-top: calc(75% - 10px);
+    padding-top: calc(75% - 10px);
 }
 
 .widget_heading {
-  font-weight: 300;
-  font-size: 20px;
-  position: relative;
-  z-index: 2;
+    font-weight: 300;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .widget-heading--sm {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .widget_topBar {
-  font-size: 11px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: auto;
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-self: stretch;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    //align-self: stretch;
+    top: $spacer;
+    right: $spacer;
+    left: $spacer;
+    align-items: center;
 }
 
 .widget_indicator {
-  background: rgba($black, .15);
-  padding: $spacer/4 $spacer/2;
+    background: rgba($black, .15);
+    padding: $spacer/4 $spacer/2;
 }
 
 .widget_infoList {
-  font-size: 13px;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  background: rgba($black, .15);
-  position: relative;
-  z-index: 2;
-  justify-content: space-between;
-  li {
-    padding: $spacer/4 $spacer/2;
-  }
+    font-size: 13px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background: rgba($black, .15);
+    position: relative;
+    z-index: 2;
+    justify-content: space-between;
+    li {
+        padding: $spacer/4 $spacer/2;
+    }
 }
 
 .widget_fullLink {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  color: inherit;
-  z-index: 3;
-}
-
-.widget_content--tools {
-  justify-content: flex-start;
-  overflow-y: auto;
-  .widget_indicator {
-    margin-bottom: $spacer;
-  }
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: inherit;
+    z-index: 3;
 }
 
 .widget_newsList {
-  .widget_infoList {
-    opacity: .78;
-    background: transparent;
-    > li {
-      padding: 0;
+    flex: 2;
+    align-self: stretch;
+    .widget_infoList {
+        opacity: .78;
+        background: transparent;
+        > li {
+            padding: 0;
+        }
     }
-  }
+}
+
+.widget_toolList,
+.widget_eventList {
+    align-self: stretch;
+    flex: 2;
+}
+
+.widget_dropdown {
+    .dropdown-toggle {
+        &:after {
+            display: none;
+        }
+        &:before {
+            font-size: 40px;
+            @include transition(all 0.2s ease-in-out);
+            content: '\00b7 \00b7 \00b7';
+            line-height: 0;
+            margin-right: 2px;
+            display: inline-block;
+            vertical-align: -.2em;
+            letter-spacing:-5px;
+        }
+    }
+    a.dropdown-item {
+      color:$gray;
+      font-size:14px;
+    }
 }

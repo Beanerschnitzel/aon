@@ -2,19 +2,24 @@
 // TOOL LIST
 // -----------------------------------------------------------------------------
 .toolList {
+  font-size:13px;
   list-style: none;
   padding: 0;
   margin-left: 0;
-  align-self: stretch;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow-y:auto;
+  align-items:flex-start;
+  font-weight:400;
   > li {
-    padding: $spacer/4 $spacer/2;
+    
     background: $gray-lighter;
     border-radius: 50px;
-    margin: $spacer/2;
+    margin: $spacer/4;
     a {
+      display:block;
+      padding: $spacer/4 $spacer/2;
       text-decoration: none;
       color: $gray;
       @extend .icon-cog;

@@ -2,21 +2,22 @@
 // EVENT LIST
 // -----------------------------------------------------------------------------
 .eventList {
+	font-size:14px;
 	list-style: none;
 	padding: 0;
 	margin-left:0;
-	align-self:stretch;
+	overflow-y:auto;
 	> li {
 		display:flex;
 		margin-bottom:$spacer;
 	}
 }
 .eventList_date {
+	font-size:11px;
 	padding:0 $spacer;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	font-size:14px;
 	position:relative;
 	span {
 		font-size:30px;
@@ -39,6 +40,7 @@
 	}
 }
 p.eventList_title {
-	font-weight:bold;
-	margin-bottom:$spacer;
+	font-size:17px;
+	font-weight:400;
+	margin-bottom:$spacer/2;
 }
