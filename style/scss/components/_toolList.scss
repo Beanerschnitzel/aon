@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// TOOL LIST
+// -----------------------------------------------------------------------------
+.toolList {
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+  align-self: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  > li {
+    padding: $spacer/4 $spacer/2;
+    background: $gray-lighter;
+    border-radius: 50px;
+    margin: $spacer/2;
+    a {
+      text-decoration: none;
+      color: $gray;
+      @extend .icon-cog;
+      &:before {
+        @extend %iconStyle;
+        font-size: 15px;
+      }
+      &:hover {
+        &:before {
+          animation: spin 1s infinite linear;
+        }
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}

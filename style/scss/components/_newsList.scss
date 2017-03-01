@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// TOOL LIST
+// -----------------------------------------------------------------------------
+.newsList {
+	list-style: none;
+	padding: 0;
+	margin-left:0;
+	align-self:stretch;
+	> li {
+		padding-top:$spacer;
+		padding-bottom:$spacer;
+		position:relative;
+		> p {
+			margin-bottom:$spacer/2;
+		}
+		&:after {
+			position:absolute;
+			content:'';
+			left:0;
+			right:0;
+			bottom:0;
+			border-top:1px solid;
+			opacity:.2;
+		}
+	}
+}
