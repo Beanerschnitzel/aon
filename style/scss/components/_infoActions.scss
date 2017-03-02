@@ -5,12 +5,17 @@
     font-size: 14px;
     display: flex;
     list-style: none;
-    padding: 0;
+    padding: $spacer 0;
     justify-content: space-between;
+    align-items:center;
+    border-top:1px solid $gray-lighter;
+    border-bottom:1px solid $gray-lighter;
+    margin-bottom:$spacer;
     ul {
         display: flex;
         list-style: none;
         padding: 0;
+        margin:0;
         > li {
             margin-right: $spacer;
             &:last-child {

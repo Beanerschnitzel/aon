@@ -12,12 +12,12 @@ html(lang="en")
 				main
 					.container-fluid
 						.row.widgets
-							.col-md-6
+							.col-md-9
 								article.articleMain
 									figure
 										img(src="/img/mars.jpg", class="img-fluid")
 										figcaption Caption describing image, crediting source, etc.
-									h1 Life on Mars? Our experts weigh in on interplanetary travel
+									h1.mb-3 Life on Mars? Our experts weigh in on interplanetary travel
 									.infoActions
 										ul.infoActions_info
 											li Dec 29, 2016
@@ -40,10 +40,43 @@ html(lang="en")
 										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum quam felis, et fringilla arcu fringilla a. Nam turpis eros, ultricies non maximus a, vehicula venenatis est. Fusce ornare tincidunt felis, id sagittis libero suscipit in. Nullam id tortor vehicula, aliquet felis et, porttitor velit. Aenean est dui, tempor sit amet elit eu, porta aliquam odio. Quisque congue quam in felis mollis, imperdiet finibus quam porttitor. Morbi ultrices massa eu blandit congue. Suspendisse sit amet convallis urna. Morbi sem felis, lacinia tempor egestas ut, posuere in ante. Mauris tincidunt vulputate lorem. Mauris dapibus, mi in vulputate eleifend, velit leo viverra tortor, at aliquet orci magna nec massa.
 									p
 										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum quam felis, et fringilla arcu fringilla a. Nam turpis eros, ultricies non maximus a, vehicula venenatis est. Fusce ornare tincidunt felis, id sagittis libero suscipit in. Nullam id tortor vehicula, aliquet felis et, porttitor velit. Aenean est dui, tempor sit amet elit eu, porta aliquam odio. Quisque congue quam in felis mollis, imperdiet finibus quam porttitor. Morbi ultrices massa eu blandit congue. Suspendisse sit amet convallis urna. Morbi sem felis, lacinia tempor egestas ut, posuere in ante. Mauris tincidunt vulputate lorem. Mauris dapibus, mi in vulputate eleifend, velit leo viverra tortor, at aliquet orci magna nec massa.
-							.col-md-6
+									hr
+									h3.mb-4 Comments
+									a(name='comments')
+									.comment
+										p.comment-byline 01 June 2015 - Username Here
+										p
+											| User comment goes here... Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus.
+										p
+											a.comment-replyLink(href="") Reply
+									.comment.comment-reply
+										p.comment-byline 01 June 2015 - Username Here
+										p
+											| User reply goes here... Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus.
+										p
+											a.comment-replyLink(href="") Reply
+									.comment.comment-reply
+										p.comment-byline 01 June 2015 - Username Here
+										p
+											| User reply goes here... Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus.
+										p
+											a.comment-replyLink(href="") Reply
+									.comment
+										p.comment-byline 01 June 2015 - Username Here
+										p
+											| User comment goes here... Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus.
+										p
+											a.comment-replyLink(href="") Reply
+									.comment
+										p.comment-byline 01 June 2015 - Username Here
+										p
+											| User comment goes here... Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus.
+										p
+											a.comment-replyLink(href="") Reply
+							.col-md-3
 								.row
-									.col-md-6.widget.widget--1-1
-										.widget_content.widget_content--tools(style="background:#48b0f7")
+									.col-12.widget.widget--1-1
+										.widget_content.widget_content--contrastBlue
 											.widget_topBar
 												span.widget_indicator News : Company
 												a(href="") View All
@@ -63,8 +96,8 @@ html(lang="en")
 													ul.widget_infoList
 														li Dec 29, 2016
 														li.icon-heart 103
-									.col-md-6.widget.widget--1-1
-										.widget_content.widget_content--tools(style="background:#10cfbd")
+									.col-12.widget.widget--1-1
+										.widget_content.widget_content--contrastAqua
 											.widget_topBar
 												span.widget_indicator News : Location
 												.dropdown.widget_dropdown
@@ -89,76 +122,6 @@ html(lang="en")
 													ul.widget_infoList
 														li Dec 29, 2016
 														li.icon-heart 103
-									.col-md-6.widget.widget--1-1
-										.widget_content.widget_content--tools(style="background:#939393")
-											.widget_topBar
-												span.widget_indicator My Tools
-												.searchBox
-													input.searchBox-textField(type='text', name='', placeholder='search')
-													a.searchBox-submit
-												a(href="", class="icon-cog") Manage
-											ul.toolList.widget_toolList
-												li
-													a(href="") Advantageous
-												li 
-													a(href="") AON Client Promise
-												li 
-													a(href="") AON Cares - GAYE Form
-												li 
-													a(href="") AON Expense / Finance Portal
-												li 
-													a(href="") Aon Offices Worldwide - Premises Look Up
-												li 
-													a(href="") Video Conferencing
-												li 
-													a(href="") Sharepoint (Microsoft Hosted)
-												li 
-													a(href="") Control M - Self Service
-												li 
-													a(href="") Outlook Web App (OWA)
-												li 
-													a(href="") Google Analytics @ AON
-												li 
-													a(href="") MYTOKEN Self Service Site (Mobilepass)
-									.col-md-6.widget.widget--1-1
-										.widget_content(style="background:#6d5cae")
-											.widget_topBar
-												span.widget_indicator My Schedule
-												//a(href="", class="icon-cog") Manage
-												.dropdown.widget_dropdown
-													a#dropdownMenuLink.icon-ellipsis.dropdown-toggle(href='https://example.com', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-													.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuLink')
-														a.dropdown-item(href='#') Today
-														a.dropdown-item(href='#') This Week
-														a.dropdown-item(href='#') Manage Calendar
-											ul.eventList.widget_eventList
-												li
-													span.eventList_date
-														| Thu 
-														span 22
-														| DEC
-													span.eventList_info
-														p.eventList_title lorem ipsum dolor sit amet
-														p 12:00 PM - 1:00pm
-														p Organizer : Atul Chada
-												li
-													span.eventList_date
-														| Thu 
-														span 22
-														| DEC
-													span.eventList_info
-														p.eventList_title lorem ipsum dolor sit amet
-														p 12:00 PM - 1:00pm
-														p Organizer : Atul Chada
-												li
-													span.eventList_date
-														| Thu 
-														span 22
-														| DEC
-													span.eventList_info
-														p.eventList_title lorem ipsum dolor sit amet
-														p 12:00 PM - 1:00pm
-														p Organizer : Atul Chada
 
 				include includes/_footerMain.pug
 

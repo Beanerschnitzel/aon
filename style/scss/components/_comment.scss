@@ -1,0 +1,49 @@
+/*COMMENT
+=======================================================================================*/
+
+.comment {
+    //@extend %noPhatBottom;
+    @extend .icon-comment-alt;
+
+    font-size:14px;
+
+    position: relative;
+
+    margin-bottom: $spacer/2;
+    padding-left: $spacer*1.5;
+
+    line-height: 1.6;
+
+    &:before {
+        @extend %iconStyle;
+
+        font-size:18px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        color: $gray-light;
+    }
+    p {
+        margin-bottom: $spacer/4;
+    }
+    &.comment-reply {
+        @extend .icon-arrow-right-down;
+
+        margin-left: $spacer*1.5;
+    }
+}
+
+p.comment-byline {
+    margin-bottom: 0;
+
+    font-weight: bold;
+    font-style: normal;
+
+    color: $gray;
+}
+
+.comment-replyLink {
+    font-size:13px;
+}
