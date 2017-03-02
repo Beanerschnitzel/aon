@@ -19,14 +19,6 @@
   'base/typography',
   'base/helpers';
 
-// 4. Layout-related sections
-@import
-  'layout/headerMain',
-  'layout/widgets',
-  'layout/main',
-  'layout/navBar',
-  'layout/footerMain';
-
 // 5. Components
 @import
   'components/bug',
@@ -43,7 +35,18 @@
   'components/infoActions',
   'components/lists',
   'components/searchBox',
+  'components/figure',
+  'components/articleMain',
   'components/navMain';
+// 4. Layout-related sections
+@import
+  'layout/headerMain',
+  'layout/widgets',
+  'layout/main',
+  'layout/navBar',
+  'layout/footerMain';
+
+
 
 // 6. Page-specific styles
 @import

@@ -44,7 +44,7 @@ html(lang="en")
 							.col-md-6
 								.row
 									.col-md-6.widget.widget--1-1
-										.widget_content.widget_content--tools(style="background:#48b0f7")
+										.widget_content.widget_content--contrastBlue
 											.widget_topBar
 												span.widget_indicator News : Company
 												a(href="") View All
@@ -65,7 +65,7 @@ html(lang="en")
 														li Dec 29, 2016
 														li.icon-heart 103
 									.col-md-6.widget.widget--1-1
-										.widget_content.widget_content--tools(style="background:#10cfbd")
+										.widget_content.widget_content--contrastAqua
 											.widget_topBar
 												span.widget_indicator News : Location
 												.dropdown.widget_dropdown
@@ -91,10 +91,10 @@ html(lang="en")
 														li Dec 29, 2016
 														li.icon-heart 103
 									.col-md-6.widget.widget--1-1
-										.widget_content.widget_content--tools(style="background:#939393")
+										.widget_content
 											.widget_topBar
 												span.widget_indicator My Tools
-												.searchBox
+												.searchBox.widget_searchBox
 													input.searchBox-textField(type='text', name='', placeholder='search')
 													a.searchBox-submit
 												a(href="", class="icon-cog") Manage
@@ -122,7 +122,7 @@ html(lang="en")
 												li 
 													a(href="") MYTOKEN Self Service Site (Mobilepass)
 									.col-md-6.widget.widget--1-1
-										.widget_content(style="background:#6d5cae")
+										.widget_content.widget_content--contrastGray
 											.widget_topBar
 												span.widget_indicator My Schedule
 												//a(href="", class="icon-cog") Manage
@@ -133,6 +133,33 @@ html(lang="en")
 														a.dropdown-item(href='#') This Week
 														a.dropdown-item(href='#') Manage Calendar
 											ul.eventList.widget_eventList
+												li
+													span.eventList_date
+														| Thu 
+														span 22
+														| DEC
+													span.eventList_info
+														p.eventList_title lorem ipsum dolor sit amet
+														p 12:00 PM - 1:00pm
+														p Organizer : Atul Chada
+												li
+													span.eventList_date
+														| Thu 
+														span 22
+														| DEC
+													span.eventList_info
+														p.eventList_title lorem ipsum dolor sit amet
+														p 12:00 PM - 1:00pm
+														p Organizer : Atul Chada
+												li
+													span.eventList_date
+														| Thu 
+														span 22
+														| DEC
+													span.eventList_info
+														p.eventList_title lorem ipsum dolor sit amet
+														p 12:00 PM - 1:00pm
+														p Organizer : Atul Chada
 												li
 													span.eventList_date
 														| Thu 

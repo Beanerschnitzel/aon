@@ -12,24 +12,24 @@
 	padding-right: 43px;
 	padding-left:$spacer/2;
 	margin:0;
-	height:25px;
-	line-height:25px;
-	border-color:transparent;
+	height:38px;
+	line-height:38px;
+	border:1px solid $gray-light;
 	color:darken($gray, 45%);
 	border-radius:2px;
 }
 a.searchBox-submit {
 	@extend .icon-search;
-	//background: $gray-light;
+	background: $gray-light;
 	display:block;
 	position:absolute;
 	right:0;
 	top:0;
-	color:$gray-light;
+	color:$white !important;
 	border-radius: 0 2px 2px 0;
-	height:25px;
-	width:25px;
-	line-height:25px;
+	height:38px;
+	width:38px;
+	line-height:38px;
 	text-align:center;
 	&:before {
 		@extend %iconStyle;
@@ -60,7 +60,7 @@ a.searchBox-submit {
 		border-color:$white !important;
 		color:$white;
 		border-bottom:1px solid $white;
-		padding:$spacer 0;
+		//padding:$spacer 0;
 		border-radius:0;
 		width:100%;
 		outline:none;

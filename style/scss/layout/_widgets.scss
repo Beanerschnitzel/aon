@@ -42,14 +42,44 @@
     background-size: cover;
     align-items: flex-start;
     overflow: hidden;
-    padding-top: 50px;
+    padding-top: 55px;
+    color:$gray;
     > *:last-child {
         margin-bottom: 0;
     }
     a {
+        color: inherit;
+    }
+}
+.widget_content--contrastBlue {
+    background:#48b0f7;
+    color:$white;
+    a {
         color: $white;
     }
 }
+.widget_content--contrastAqua {
+    background:#10cfbd;
+    color:$white;
+    a {
+        color: $white;
+    }
+}
+.widget_content--contrastPurple {
+    background:#6d5cae;
+    color:$white;
+    a {
+        color: $white;
+    }
+}
+.widget_content--contrastGray {
+    background:#939393;
+    color:$white;
+    a {
+        color: $white;
+    }
+}
+
 
 .widget_content--img {
     justify-content: flex-end;
@@ -63,8 +93,9 @@
         z-index: 1;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
     }
-    .widget_topBar {
-        //margin-bottom: auto;
+    color:$white;
+    a {
+        color: $white;
     }
 }
 
@@ -105,10 +136,45 @@
     left: $spacer;
     align-items: center;
 }
-
 .widget_indicator {
-    background: rgba($black, .15);
-    padding: $spacer/4 $spacer/2;
+    position:relative;
+    padding:$spacer/4 $spacer/2;
+    overflow:hidden;
+    /*&:before {
+        content:'';
+        top:0;
+        left:-1px;
+        bottom:0;
+        width:1px;
+        border-right:3px solid;
+        opacity:.15;
+        position:absolute;
+    }*/
+    &:after {
+        content:'';
+        top:0;
+        left:0;
+        right:0;
+        height:1px;
+        border-bottom:200px solid;
+        opacity:.15;
+        position:absolute;
+    }
+
+}
+
+.widget_searchBox {
+    .searchBox-textField {
+        height:25px;
+        line-height:25px;
+        border-color:lighten($gray-light,30);
+    }
+    a.searchBox-submit {
+        height:25px;
+        width:25px;
+        line-height:25px;
+        background:lighten($gray-light,30);
+    }
 }
 
 .widget_infoList {
@@ -138,6 +204,12 @@
 .widget_newsList {
     flex: 2;
     align-self: stretch;
+    margin-right:-$spacer;
+    margin-left:-$spacer;
+    >li {
+        padding-right:$spacer;
+        padding-left:$spacer;
+    }
     .widget_infoList {
         opacity: .78;
         background: transparent;
@@ -151,6 +223,24 @@
 .widget_eventList {
     align-self: stretch;
     flex: 2;
+}
+.widget_toolList {
+    margin-right:-$spacer;
+    margin-left:-$spacer;
+    li {
+        background:transparent;
+        border-bottom:1px solid $gray-lighter;
+        border-radius:0;
+        a {
+            padding:$spacer $spacer/2;
+        }
+    }
+}
+.widget_eventList {
+    > li {
+        margin-bottom:$spacer*2;
+    }
+
 }
 
 .widget_dropdown {

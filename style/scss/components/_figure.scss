@@ -1,0 +1,19 @@
+/* Figure
+========================================================================== */
+
+figure {
+    text-align: center;
+    position: relative;
+    
+    /*
+    * Image captions
+    */
+    figcaption {
+        font-size:14px;
+        display: block;
+        color: $gray;
+        padding-bottom: 1em;
+        margin-top: 1em;
+        text-align:left;
+    }
+}
