@@ -1,13 +1,51 @@
 // -----------------------------------------------------------------------------
 // LISTS
 // -----------------------------------------------------------------------------
+/*
+* Have a numbered `ul` without the semantics implied by using an `ol`. */
+.list--numbered, ol {
+	list-style-type: decimal;
+}
+.list--horizontal {
+	margin-left:0;
+	padding: 0;
+	list-style-type: none;
+	li {
+		display: inline-block;
+		//bottom margin is in case of wrapping
+		margin: 0 $spacingSm $spacingXSm 0;
+	}
+	&.list--separated {
+		li {
+			padding-left: $spacingSm;
+			position: relative;
+			&:before {
+				content: '·';
+				position: absolute;
+				top: 0;
+				left: -4px;
+			}
+			&:first-child {
+				padding-left:0;
+				&:before {
+					display:none;
+				}
+			}
+		}
+	}
+}
+.list--bare {
+	list-style: none;
+	padding: 0;
+	margin-left:0;
+}
 .list--block {
 	list-style: none;
 	padding: 0;
 	margin-left:0;
-	border-top:1px solid $gray-lighter;
-	> li {
-		padding:$spacer/4;
-		border-bottom:1px solid $gray-lighter;
+	border-top:1px solid $colorBorder;
+	li {
+		padding:$spacingXSm;
+		border-bottom:1px solid $colorBorder;
 	}
 }

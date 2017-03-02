@@ -3,6 +3,9 @@
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
+  'abstracts/spacingUnits',
+  'abstracts/colors',
+  'abstracts/noPhatBottom',
   'abstracts/functions',
   'abstracts/mixins'; 
 
@@ -17,6 +20,7 @@
   'base/base',
   'base/fonts',
   'base/typography',
+  'base/sideToSide',
   'base/helpers';
 
 // 5. Components
@@ -37,7 +41,12 @@
   'components/searchBox',
   'components/figure',
   'components/articleMain',
+  'components/searchItem',
   'components/comment',
+  'components/resultsTools',
+  'components/pagination',
+  'components/filters',
+  'components/truncateList',
   'components/navMain';
 // 4. Layout-related sections
 @import

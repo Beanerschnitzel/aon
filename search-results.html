@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="style/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/front-end/bootstrap.min.js"></script>
+    <script src="js/front-end/navBar.js"></script>
+    <script src="js/front-end/truncateList.js"></script>
+    <title>Search Results</title>
+  </head>
+  <body>
+    <form id="form01">
+      <div class="pageWrap">
+        <div class="navBar">
+          <div class="navBar_menuToggle">
+            <div class="navBar_menuIcon"><span class="navBar_menuPatty"></span><span class="navBar_menuPatty"></span><span class="navBar_menuPatty"></span><span class="navBar_menuPatty"></span><span class="navBar_menuPatty"></span><span class="navBar_menuPatty"></span></div>
+          </div>
+          <div class="navBar_searchToggle">
+            <div class="navBar_searchIcon"></div>
+          </div>
+          <div class="user navBar_user"><a href="">
+              <!--.user_info Bartholomew Andersson-->
+              <div class="bug user_bug">3</div>
+              <div class="user_img"><img src="http://fillmurray.com/40/40">
+                <!--.dropdown
+                button#dropdownMenuButton.user_btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false', style="background-image:url(http://fillmurray.com/40/40)")
+                .dropdown-menu.dropdown-menu-right.user_dropdown(aria-labelledby='dropdownMenuButton')
+                	a.dropdown-item(href='#') Action
+                	a.dropdown-item(href='#') Another action
+                	a.dropdown-item(href='#') Something else here
+                -->
+              </div></a></div>
+          <div class="navBar_face"></div>
+          <nav class="navMain">
+            <ul>
+              <li><a href="home.html">link 01</a></li>
+              <li><a href="home.html">link 02</a></li>
+              <li><a href="home.html">link 03</a></li>
+              <li><a href="home.html">link 04</a></li>
+              <li><a href="home.html">link 05</a></li>
+            </ul>
+          </nav>
+          <div class="searchMain">
+            <div class="searchBox searchBox--main">
+              <input class="searchBox-textField" id="searchMain" type="text" placeholder="Search" name=""><a class="searchBox-submit"></a>
+            </div>
+          </div>
+          <div class="navBar_overlay"></div>
+        </div><!-- Main Header HTML -->
+        <header class="headerMain">
+          <div class="headerMain-util"></div>
+          <div class="headerMain-main">
+            <div class="headerMain-mainInner">
+              <div class="headerMain-mainZone01">
+                <div class="logoMain"><a href="google.com">NewCo</a></div>
+              </div>
+              <div class="headerMain-mainZone02">
+                <div class="tagline">Tagline for the intranet</div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="filters">
+                  <h2 class="filters-heading">Refine Your Results</h2>
+                  <h3 class="filters-subHeading">Categories</h3>
+                  <ul class="filters-list truncateList">
+                    <li><a href="">Filter Option (22)</a></li>
+                    <li><a href="">Filter Option (18)</a></li>
+                    <li><a href="">Filter Option (7)</a></li>
+                    <li><a href="">Filter Option (3)</a></li>
+                  </ul>
+                  <h3 class="filters-subHeading">Types</h3>
+                  <ul class="filters-list truncateList">
+                    <li><a href="">Filter Option (13)</a></li>
+                    <li><a href="">Filter Option (11)</a></li>
+                    <li><a href="">Filter Option (7)</a></li>
+                    <li><a href="">Filter Option (3)</a></li>
+                    <li><a href="">Filter Option (14)</a></li>
+                    <li><a href="">Filter Option (8)</a></li>
+                    <li><a href="">Filter Option (18)</a></li>
+                    <li><a href="">Filter Option (23)</a></li>
+                    <li><a href="">Filter Option (9)</a></li>
+                    <li><a href="">Filter Option (4)</a></li>
+                    <li><a href="">Filter Option (7)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="resultsTools">
+                  <div class="resultsTools-results"><span class="resultsTools-count">247 posts</span><a class="resultsTools-mobileFilterDrawerToggle drawerToggle" data-for="filters-mobile" href="javascript:void(0)">Refine Results</a></div>
+                  <div class="resultsTools-options">
+                    <div class="pagination">
+                      <div class="pageNumbers"><a class="prev inactive" onclick="return false;" href="javascript:void(0)"></a><span class="current">1</span><a href="javascript:void(0)">2</a><a href="javascript:void(0)">3</a><a href="javascript:void(0)">4</a><a href="javascript:void(0)">5</a><a class="next" href="javascript:void(0)"></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="searchItem">
+                  <div class="searchItem_body">
+                    <div class="searchItem_heading"><a href="">Result Title</a></div>
+                    <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+                  </div>
+                </div>
+                <div class="searchItem">
+                  <div class="searchItem_body">
+                    <div class="searchItem_heading"><a href="">Result Title</a></div>
+                    <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+                  </div>
+                </div>
+                <div class="searchItem">
+                  <div class="searchItem_body">
+                    <div class="searchItem_heading"><a href="">Result Title</a></div>
+                    <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+                  </div>
+                </div>
+                <div class="searchItem">
+                  <div class="searchItem_body">
+                    <div class="searchItem_heading"><a href="">Result Title</a></div>
+                    <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+                  </div>
+                </div>
+                <div class="searchItem">
+                  <div class="searchItem_body">
+                    <div class="searchItem_heading"><a href="">Result Title</a></div>
+                    <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <div class="pagination">
+                    <div class="pageNumbers"><a class="prev inactive" onclick="return false;" href="javascript:void(0)"></a><span class="current">1</span><a href="javascript:void(0)">2</a><a href="javascript:void(0)">3</a><a href="javascript:void(0)">4</a><a href="javascript:void(0)">5</a><a class="next" href="javascript:void(0)"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footerMain">
+          <p>NewCo footer content</p>
+        </footer>
+        <script>
+          $(document).ready(function() {
+          	$('.dropdown-toggle').dropdown();
+          	truncateList(5);
+          
+          });
+        </script>
+      </div>
+    </form>
+  </body>
+</html>

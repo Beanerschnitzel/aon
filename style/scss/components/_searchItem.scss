@@ -1,0 +1,33 @@
+/* SEARCH ITEM
+========================================================================== */
+
+.searchItem {
+	border-bottom:1px solid $gray-lighter;
+	padding-bottom:$spacer;
+	margin-bottom:$spacer;
+	font-size:14px;
+}
+.searchItem_heading {
+	font-size:18px;
+	font-weight:700;
+	margin-bottom:0;
+	a {
+		text-decoration:none;
+	}
+}
+.searchItem-figure {
+	text-align:left;
+	margin-bottom:$spacer;
+}
+ @include media-breakpoint-up(md) {
+ 	.searchItem-body {
+ 		overflow:hidden;
+ 	}
+ 	.searchItem-figure {
+ 		float:right;
+ 		margin-left: $spacer;
+ 		margin-bottom:0;
+ 		max-width: 35%;
+ 		text-align:center;
+ 	}
+ }

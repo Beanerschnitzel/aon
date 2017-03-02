@@ -1,0 +1,53 @@
+/* PAGINATION
+========================================================================== */
+
+.pagination {
+}
+.pageNumbers {
+    display:flex;
+
+    justify-content:center;
+
+    a,
+    span {
+        padding: 0 $spacingXSm;
+
+        text-align: center;
+    }
+
+    .prev,
+    .next {
+        &:before {
+            display: inline-block;
+
+            width: 1em;
+            height: 1em;
+        }
+    }
+
+    .prev {
+        border-radius: 2px 0 0 2px;
+
+        &:before {
+            content: '\276E';
+        }
+    }
+
+    .next {
+        border-radius: 0 2px 2px 0;
+
+        &:before {
+            content: '\276F';
+        }
+    }
+
+    .current {
+        color: $colorGrey;
+    }
+
+    .inactive {
+        pointer-events: none;
+
+        color: $colorGreyLight;
+    }
+}
