@@ -6,28 +6,29 @@
   list-style: none;
   padding: 0;
   margin-left: 0;
-  //display: flex;
-  //flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   //justify-content: center;
   overflow-y:auto;
   //align-items:flex-start;
   font-weight:400;
   > li {
-    
-    background: $gray-lighter;
-    border-radius: 50px;
     margin: $spacer/4;
     a {
       display:block;
+      background: $gray-lighter;
+      border-radius: 50px;
       padding: $spacer/4 $spacer/2;
       text-decoration: none;
       color: $gray;
       @extend .icon-cog;
       &:before {
         @extend %iconStyle;
-        font-size: 15px;
+        font-size: 100%;
+        margin-right:.5em;
       }
       &:hover {
+        background:#daeffd;
         &:before {
           animation: spin 1s infinite linear;
         }

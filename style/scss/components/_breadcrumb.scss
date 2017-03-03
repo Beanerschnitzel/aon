@@ -1,0 +1,66 @@
+/* BUG
+========================================================================== */
+
+.breadcrumb {
+    padding: 0;
+    margin: 0;
+    li {
+        font-size:13px;
+        /* on mobile, we only show the last breadcrumb like a "go back one page" link.
+        So we hide all of the links on mobile except the last one. see below */
+        display: none;
+        vertical-align: middle;
+        list-style: none outside none;
+        margin: 0;
+        line-height: 1;
+        a {
+            color:$colorGreyDark;
+            /* add the caret icon after the links */
+            &:after {
+                @extend %iconStyle;
+                margin-right:0;
+                content: '\e815';
+                margin-left: $spacingXSm;
+                color: $colorGreyDark;
+            }
+        }
+        
+        /* the first link is the fontello "home" icon */
+        &:first-child a:before {
+            @extend %iconStyle;
+            margin-right:0;
+            content: '\e868';
+        }
+        
+        /* show the last link only on mobile. We make them all visible for desktop in responsive.scss */
+        &:last-child {
+            display: inline-block; /* hide the right pointing icon */
+            a:after {
+                display: none;
+            }
+            
+            /* add a left pointing icon indicating "go back one page" */
+            a:before {
+                @extend %iconStyle;
+                content: '\e814';
+            }
+        }
+    }
+}
+@include media-breakpoint-up(md) { 
+    .breadcrumb {
+        li {
+            /* make all the links visible that we hid on mobile */
+            display: inline-block; /* show the right pointing icon we hid on mobile and sh the right pointing icon */
+            &:last-child {
+                a:after {
+                    display: inline-block;
+                }
+                a:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

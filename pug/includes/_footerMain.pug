@@ -1,2 +1,26 @@
 footer.footerMain
 	p NewCo footer content
+
+	
+	script.
+		$(document).ready(function() {
+			$('.dropdown-toggle').dropdown();
+			//$(".widget_slider").liveTile();
+		});
+	script.
+		var totalSlides = $(".widget_slider>div").length;
+		$(".widget_slider").liveTile({
+		    // animation complete is used to update the status.
+		    animationComplete: function(tileData, $front, $back){
+		        var cur = $(this).find(".active").index() + 1;
+		        $(".widgetSliderNav_status").text(cur + ' of ' + totalSlides);
+		    }
+		});
+		$(".widgetSliderNav_prev").click(function(){
+		    $(".widget_slider").liveTile("goto", "prev");
+		});
+		$(".widgetSliderNav_next").click(function(){    
+		    $(".widget_slider").liveTile("goto", "next");
+		    // or
+		    //$("#tile1").liveTile("goto");
+		});

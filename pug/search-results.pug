@@ -10,6 +10,7 @@ html(lang="en")
 				include includes/_navBar.pug
 				include includes/_header-main.pug
 				main
+					.sideBar
 					.container-fluid
 						.row
 							.col-md-3
@@ -50,11 +51,52 @@ html(lang="en")
 										li
 											a(href='') Filter Option (7)
 							.col-md-9
-								.resultsTools
-									.resultsTools-results
-										span.resultsTools-count 247 posts
-										a.resultsTools-mobileFilterDrawerToggle.drawerToggle(data-for='filters-mobile', href='javascript:void(0)') Refine Results
-									.resultsTools-options
+								.articleMain
+									.resultsTools
+										.resultsTools-results
+											span.resultsTools-count 247 posts
+											a.resultsTools-mobileFilterDrawerToggle.drawerToggle(data-for='filters-mobile', href='javascript:void(0)') Refine Results
+										.resultsTools-options
+											.pagination
+												.pageNumbers
+													a.prev.inactive(onclick='return false;', href='javascript:void(0)')
+													span.current 1
+													a(href='javascript:void(0)') 2
+													a(href='javascript:void(0)') 3
+													a(href='javascript:void(0)') 4
+													a(href='javascript:void(0)') 5
+													a.next(href='javascript:void(0)')
+									.searchItem
+										.searchItem_body
+											.searchItem_heading
+												a(href="") Result Title
+											.searchItem_info
+												| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+									.searchItem
+										.searchItem_body
+											.searchItem_heading
+												a(href="") Result Title
+											.searchItem_info
+												| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+									.searchItem
+										.searchItem_body
+											.searchItem_heading
+												a(href="") Result Title
+											.searchItem_info
+												| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+									.searchItem
+										.searchItem_body
+											.searchItem_heading
+												a(href="") Result Title
+											.searchItem_info
+												| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+									.searchItem
+										.searchItem_body
+											.searchItem_heading
+												a(href="") Result Title
+											.searchItem_info
+												| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
+									.text-center
 										.pagination
 											.pageNumbers
 												a.prev.inactive(onclick='return false;', href='javascript:void(0)')
@@ -64,46 +106,6 @@ html(lang="en")
 												a(href='javascript:void(0)') 4
 												a(href='javascript:void(0)') 5
 												a.next(href='javascript:void(0)')
-								.searchItem
-									.searchItem_body
-										.searchItem_heading
-											a(href="") Result Title
-										.searchItem_info
-											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
-								.searchItem
-									.searchItem_body
-										.searchItem_heading
-											a(href="") Result Title
-										.searchItem_info
-											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
-								.searchItem
-									.searchItem_body
-										.searchItem_heading
-											a(href="") Result Title
-										.searchItem_info
-											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
-								.searchItem
-									.searchItem_body
-										.searchItem_heading
-											a(href="") Result Title
-										.searchItem_info
-											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
-								.searchItem
-									.searchItem_body
-										.searchItem_heading
-											a(href="") Result Title
-										.searchItem_info
-											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.
-								.text-center
-									.pagination
-										.pageNumbers
-											a.prev.inactive(onclick='return false;', href='javascript:void(0)')
-											span.current 1
-											a(href='javascript:void(0)') 2
-											a(href='javascript:void(0)') 3
-											a(href='javascript:void(0)') 4
-											a(href='javascript:void(0)') 5
-											a.next(href='javascript:void(0)')
 
 				include includes/_footerMain.pug
 

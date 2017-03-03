@@ -10,6 +10,9 @@
     <script src="js/front-end/bootstrap.min.js"></script>
     <script src="js/front-end/navBar.js"></script>
     <script src="js/front-end/truncateList.js"></script>
+    <script src="js/front-end/slick.min.js"></script>
+    <script src="js/front-end/MetroJs.lt.min.js"></script>
+    <script src="js/front-end/widgetSearchToggle.js"></script>
     <title>Search Results</title>
   </head>
   <body>
@@ -56,15 +59,16 @@
           <div class="headerMain-main">
             <div class="headerMain-mainInner">
               <div class="headerMain-mainZone01">
-                <div class="logoMain"><a href="google.com">NewCo</a></div>
+                <div class="logoMain"><a href="google.com">Coming Soon...</a></div>
               </div>
               <div class="headerMain-mainZone02">
-                <div class="tagline">Tagline for the intranet</div>
+                <div class="tagline">A place for your stuff</div>
               </div>
             </div>
           </div>
         </header>
         <main>
+          <div class="sideBar"></div>
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-3">
@@ -94,47 +98,49 @@
                 </div>
               </div>
               <div class="col-md-9">
-                <div class="resultsTools">
-                  <div class="resultsTools-results"><span class="resultsTools-count">247 posts</span><a class="resultsTools-mobileFilterDrawerToggle drawerToggle" data-for="filters-mobile" href="javascript:void(0)">Refine Results</a></div>
-                  <div class="resultsTools-options">
+                <div class="articleMain">
+                  <div class="resultsTools">
+                    <div class="resultsTools-results"><span class="resultsTools-count">247 posts</span><a class="resultsTools-mobileFilterDrawerToggle drawerToggle" data-for="filters-mobile" href="javascript:void(0)">Refine Results</a></div>
+                    <div class="resultsTools-options">
+                      <div class="pagination">
+                        <div class="pageNumbers"><a class="prev inactive" onclick="return false;" href="javascript:void(0)"></a><span class="current">1</span><a href="javascript:void(0)">2</a><a href="javascript:void(0)">3</a><a href="javascript:void(0)">4</a><a href="javascript:void(0)">5</a><a class="next" href="javascript:void(0)"></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="searchItem">
+                    <div class="searchItem_body">
+                      <div class="searchItem_heading"><a href="">Result Title</a></div>
+                      <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+                    </div>
+                  </div>
+                  <div class="searchItem">
+                    <div class="searchItem_body">
+                      <div class="searchItem_heading"><a href="">Result Title</a></div>
+                      <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+                    </div>
+                  </div>
+                  <div class="searchItem">
+                    <div class="searchItem_body">
+                      <div class="searchItem_heading"><a href="">Result Title</a></div>
+                      <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+                    </div>
+                  </div>
+                  <div class="searchItem">
+                    <div class="searchItem_body">
+                      <div class="searchItem_heading"><a href="">Result Title</a></div>
+                      <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+                    </div>
+                  </div>
+                  <div class="searchItem">
+                    <div class="searchItem_body">
+                      <div class="searchItem_heading"><a href="">Result Title</a></div>
+                      <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
+                    </div>
+                  </div>
+                  <div class="text-center">
                     <div class="pagination">
                       <div class="pageNumbers"><a class="prev inactive" onclick="return false;" href="javascript:void(0)"></a><span class="current">1</span><a href="javascript:void(0)">2</a><a href="javascript:void(0)">3</a><a href="javascript:void(0)">4</a><a href="javascript:void(0)">5</a><a class="next" href="javascript:void(0)"></a></div>
                     </div>
-                  </div>
-                </div>
-                <div class="searchItem">
-                  <div class="searchItem_body">
-                    <div class="searchItem_heading"><a href="">Result Title</a></div>
-                    <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
-                  </div>
-                </div>
-                <div class="searchItem">
-                  <div class="searchItem_body">
-                    <div class="searchItem_heading"><a href="">Result Title</a></div>
-                    <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
-                  </div>
-                </div>
-                <div class="searchItem">
-                  <div class="searchItem_body">
-                    <div class="searchItem_heading"><a href="">Result Title</a></div>
-                    <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
-                  </div>
-                </div>
-                <div class="searchItem">
-                  <div class="searchItem_body">
-                    <div class="searchItem_heading"><a href="">Result Title</a></div>
-                    <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
-                  </div>
-                </div>
-                <div class="searchItem">
-                  <div class="searchItem_body">
-                    <div class="searchItem_heading"><a href="">Result Title</a></div>
-                    <div class="searchItem_info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ac mauris. Quisque eget metus eget tellus ultrices rhoncus. Phasellus id lacus semper lacus suscipit pretium. Nulla mollis ligula id tellus. Duis ac libero. Nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus sodales lacus a risus.Vivamus sodales lacus a risus.</div>
-                  </div>
-                </div>
-                <div class="text-center">
-                  <div class="pagination">
-                    <div class="pageNumbers"><a class="prev inactive" onclick="return false;" href="javascript:void(0)"></a><span class="current">1</span><a href="javascript:void(0)">2</a><a href="javascript:void(0)">3</a><a href="javascript:void(0)">4</a><a href="javascript:void(0)">5</a><a class="next" href="javascript:void(0)"></a></div>
                   </div>
                 </div>
               </div>
@@ -143,6 +149,30 @@
         </main>
         <footer class="footerMain">
           <p>NewCo footer content</p>
+          <script>
+            $(document).ready(function() {
+            	$('.dropdown-toggle').dropdown();
+            	//$(".widget_slider").liveTile();
+            });
+          </script>
+          <script>
+            var totalSlides = $(".widget_slider>div").length;
+            $(".widget_slider").liveTile({
+                // animation complete is used to update the status.
+                animationComplete: function(tileData, $front, $back){
+                    var cur = $(this).find(".active").index() + 1;
+                    $(".widgetSliderNav_status").text(cur + ' of ' + totalSlides);
+                }
+            });
+            $(".widgetSliderNav_prev").click(function(){
+                $(".widget_slider").liveTile("goto", "prev");
+            });
+            $(".widgetSliderNav_next").click(function(){    
+                $(".widget_slider").liveTile("goto", "next");
+                // or
+                //$("#tile1").liveTile("goto");
+            });
+          </script>
         </footer>
         <script>
           $(document).ready(function() {

@@ -1,0 +1,23 @@
+/* WIDGETS
+========================================================================== */
+
+.sideBar {
+    display: flex;
+    //justify-content: space-between;
+    position:relative;
+    z-index: 2;
+    background:#1ba1e2;
+    align-items:center;
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 350px;
+        height: 100vh;
+        //border-bottom-width: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: $spacer 0;
+    }
+
+}

@@ -9,7 +9,14 @@
 	overflow-y:auto;
 	> li {
 		display:flex;
-		margin-bottom:$spacer;
+		padding-bottom:$spacingLg;
+		padding-left:$spacingBase;
+		overflow:hidden;
+		&:last-child {
+			.eventList_date:after {
+				display:none;
+			}
+		}
 	}
 }
 .eventList_date {
@@ -19,11 +26,39 @@
 	flex-direction:column;
 	align-items:center;
 	position:relative;
+	border-radius:50%;
+	width:70px;
+	height:70px;
+	line-height:1;
+	display:flex;
+	justify-content:center;
+	text-transform: uppercase;
 	span {
-		font-size:30px;
+		font-size:26px;
 		font-weight:bold;
 	}
-		&:after {
+	&:before {
+		content:'';
+		position:absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		border:1px solid;
+		border-radius:50%;
+		opacity:.5;
+	}
+	&:after {
+		content:'';
+		position:absolute;
+		top:100%;
+		left:50%;
+		height:300px;
+		width:0;
+		border-right:1px solid;
+		opacity:.5;
+	}
+		/*&:after {
 			position:absolute;
 			content:'';
 			top:0;
@@ -31,7 +66,7 @@
 			bottom:0;
 			border-left:1px solid;
 			opacity:.2;
-		}
+		}*/
 }
 .eventList_info {
 	padding:0 $spacer;
@@ -43,4 +78,12 @@ p.eventList_title {
 	font-size:17px;
 	font-weight:400;
 	margin-bottom:$spacer/2;
+}
+.eventList_details {
+	@extend .list--bare;
+	margin-left:$spacingSm;
+	opacity:.85;
+	> li {
+		margin-bottom:$spacingXSm;
+	}
 }
